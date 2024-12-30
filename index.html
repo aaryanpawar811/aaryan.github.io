@@ -1,37 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Personal Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
     <style>
-        /* CSS to center the content */
         body {
-            text-align: center; /* This will center the text */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px; /* Set the width of the image */
-            border-radius: 10px; /* Optional: For rounded corners */
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+        header img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+            border: 3px solid #ccc;
+            margin-top: 10px;
+        }
+        section {
+            width: 80%;
+            max-width: 600px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            width: 100%; /* Ensure images resize to fit the container */
+            max-width: 600px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+        .image-container p {
+            text-align: left;
+            margin: 10px 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Personal Website!</h1>
-    <p>Hello! My name is <b>AARYAN PAWAR</b>. Here's a little about me:</p> 
-    <p>I am currently pursuing B-Tech in GVPCE-(A) Vskp in CSE.</p>
-    
-    <p>Here are some of my hobbies:</p>
-    <ul>
-        <li>Listening to music</li>
-        <li>Playing games</li>
-        <li>Watching TV</li>
-    </ul>
-    
-    <!-- Add your image here -->
-    <img src="https://github.com/aaryanpawar811/aaryan.github.io/blob/main/aaryan45.jpg?raw=true" /> 
-    
-    <p>This is a photo of mine!</p>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <img src="https://github.com/Sandeepchintada49/ch.sandeep.github.io/blob/main/sandeep18.jpg?raw=true">
+    <p>My name is AARYAN PAWAR. I am currently pursueing B-tech in Gayatri Vidya Parishad College of Engineering in computer science and engineering. This is a photo of mine!  I live in SRIKAKULAM.</p>
+</header>
+
+    <section>
+        <h2>Gallery</h2>
+        <p>Here is a small description about my city srikakulam.Srikakulam, a district in Andhra Pradesh, is known for its rich history, ancient temples like Arasavalli Sun Temple and Srimukhalingam, and Buddhist heritage at Salihundam. Located by the Bay of Bengal, it is famous for its culture, beaches, and serene landscape.
+ </p>
+
+        <div class="image-container">
+            <img src="https://github.com/Sandeepchintada49/ch.sandeep.github.io/blob/main/Arasavilli_Sri_Suryanarayanamurty_Remple_of_Srikakulam.Andhrapradesh(4).jpg?raw=true">
+            <p>Description:The Arasavalli Temple, located near Srikakulam in Andhra Pradesh, is a famous shrine dedicated to Lord Surya (Sun God). Built in the 7th century by the Kalinga rulers, it features intricate carvings and beautiful architecture. The temple is known for its unique design, allowing sunlight to directly illuminate the deity during specific times of the year. It is a popular pilgrimage site, especially during the Ratha Saptami festival..</p>
+        </div>
+
+        <div class="image-container">
+            <img src="https://github.com/Sandeepchintada49/ch.sandeep.github.io/blob/main/at-sri-mukhalingeswara.jpg?raw=true">
+            <p>Description:The Srimukhalingam Temple in Srikakulam is a 10th-century Shiva temple by the Eastern Ganga dynasty. Known for its Kalinga-style architecture, it lies on the Vamsadhara River and is a key pilgrimage site, especially during Maha Shivaratri..</p>
+        </div>
+
+        <div class="image-container">
+            <img src="https://github.com/Sandeepchintada49/ch.sandeep.github.io/blob/main/salihundam-buddhist-remains-1523967858.jpg?raw=true">
+            <p>Description:Salihundam, located in Srikakulam, Andhra Pradesh, is an ancient Buddhist site on the banks of the Vamsadhara River. It features stupas, chaityas, and viharas from the 2nd century CE. Known for its rich history and serene surroundings, it reflects the spread of Buddhism in the region.</p>
+        </div>
+    </section>
 </body>
 </html>
